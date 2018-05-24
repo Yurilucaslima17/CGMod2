@@ -1,6 +1,9 @@
 package mygame;
 
 import com.jme3.app.SimpleApplication;
+import com.jme3.audio.AudioData;
+import com.jme3.audio.AudioData.DataType;
+import com.jme3.audio.AudioNode;
 import com.jme3.input.KeyInput;
 import com.jme3.input.controls.ActionListener;
 import com.jme3.input.controls.KeyTrigger;
@@ -16,7 +19,9 @@ import com.jme3.scene.shape.Box;
  * @author normenhansen
  */
 public class Main extends SimpleApplication {
-
+    
+    private AudioNode audio;
+    
     public static void main(String[] args) {
         Main app = new Main();
         app.start();
@@ -34,11 +39,14 @@ public class Main extends SimpleApplication {
         rootNode.attachChild(geom);
         
         initKeys();
+        initAudio();
+        flyCam.setEnabled(false);
     }
 
     @Override
     public void simpleUpdate(float tpf) {
-        //TODO: add update code
+        
+        
     }
     
     private void initKeys(){
@@ -67,15 +75,26 @@ public class Main extends SimpleApplication {
         inputManager.addMapping("La2",new KeyTrigger(KeyInput.KEY_COMMA));
         inputManager.addMapping("La#2",new KeyTrigger(KeyInput.KEY_L));
         inputManager.addMapping("Si2",new KeyTrigger(KeyInput.KEY_PERIOD));
+        
+        inputManager.addListener(actionlistener, "Do1");
     }
     
     private ActionListener actionlistener = new ActionListener() {
         @Override
         public void onAction(String name, boolean isPressed, float tpf) {
-            
+            if(name.equals("Do1") && isPressed){
+                audio.playInstance();
+            }
         }
             
 };
+    private void initAudio(){
+        audio = new AudioNode(assetManager, "Sounds/do.wav", DataType.Buffer);
+        audio.setPositional(false);
+        audio.setLooping(false);
+        audio.setVolume(2);
+        rootNode.attachChild(audio);
+    }
          
 
     @Override
