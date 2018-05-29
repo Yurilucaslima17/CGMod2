@@ -1,7 +1,6 @@
 package mygame;
 
 import com.jme3.app.SimpleApplication;
-import com.jme3.audio.AudioData;
 import com.jme3.audio.AudioData.DataType;
 import com.jme3.audio.AudioNode;
 import com.jme3.input.KeyInput;
@@ -20,7 +19,7 @@ import com.jme3.scene.shape.Box;
  */
 public class Main extends SimpleApplication {
     
-    private AudioNode audio;
+    private AudioController audioController;
     
     public static void main(String[] args) {
         Main app = new Main();
@@ -35,11 +34,12 @@ public class Main extends SimpleApplication {
         Material mat = new Material(assetManager, "Common/MatDefs/Misc/Unshaded.j3md");
         mat.setColor("Color", ColorRGBA.Blue);
         geom.setMaterial(mat);
+        
+        audioController = new AudioController(rootNode, assetManager);
 
         rootNode.attachChild(geom);
         
         initKeys();
-        initAudio();
         flyCam.setEnabled(false);
     }
 
@@ -76,26 +76,52 @@ public class Main extends SimpleApplication {
         inputManager.addMapping("La#2",new KeyTrigger(KeyInput.KEY_L));
         inputManager.addMapping("Si2",new KeyTrigger(KeyInput.KEY_PERIOD));
         
-        inputManager.addListener(actionlistener, "Do1");
+        inputManager.addListener(actionlistener, "Do1", "Do#1", "Re1", "Mi1", "Fa1", "Sol1", "Sol#1", "La1", "La#1", "Si1");
     }
     
     private ActionListener actionlistener = new ActionListener() {
         @Override
         public void onAction(String name, boolean isPressed, float tpf) {
             if(name.equals("Do1") && isPressed){
-                audio.playInstance();
+                audioController.playSound(name);
+            }
+            if(name.equals("Do#1") && isPressed){
+                audioController.playSound(name);
+            }
+            if(name.equals("Re1") && isPressed){
+                audioController.playSound(name);
+            }
+            if(name.equals("Re#1") && isPressed){
+                audioController.playSound(name);
+            }
+            if(name.equals("Mi1") && isPressed){
+                audioController.playSound(name);
+            }
+            if(name.equals("Fa1") && isPressed){
+                audioController.playSound(name);
+            }
+            if(name.equals("Fa#1") && isPressed){
+                audioController.playSound(name);
+            }
+            if(name.equals("Sol1") && isPressed){
+                audioController.playSound(name);
+            }
+            if(name.equals("Sol#1") && isPressed){
+                audioController.playSound(name);
+            }
+            if(name.equals("La1") && isPressed){
+                audioController.playSound(name);
+            }
+            if(name.equals("La#1") && isPressed){
+                audioController.playSound(name);
+            }
+            if(name.equals("Si1") && isPressed){
+                audioController.playSound(name);
             }
         }
+        
             
-};
-    private void initAudio(){
-        audio = new AudioNode(assetManager, "Sounds/do.wav", DataType.Buffer);
-        audio.setPositional(false);
-        audio.setLooping(false);
-        audio.setVolume(2);
-        rootNode.attachChild(audio);
-    }
-         
+};       
 
     @Override
     public void simpleRender(RenderManager rm) {
