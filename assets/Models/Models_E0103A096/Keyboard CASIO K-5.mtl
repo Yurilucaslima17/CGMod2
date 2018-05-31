@@ -1,0 +1,142 @@
+# Max2Mtl Version 4.0 Mar 10th, 2001
+#
+newmtl E016BLAK
+Ka  0.0 0.0 0.1
+Kd  0.0 0.0 0.1
+Ks  1.0 1.0 1.0
+d  1.0
+Ns  0.5
+illum 2
+#
+newmtl E016BLUE
+Ka  0.5 0.9 0.9
+Kd  0.5 0.9 0.9
+Ks  1.0 1.0 1.0
+d  1.0
+Ns  0.5
+illum 2
+#
+newmtl E016GRE2
+Ka  0.2 0.2 0.2
+Kd  0.2 0.2 0.2
+Ks  1.0 1.0 1.0
+d  1.0
+Ns  0.5
+illum 2
+#
+newmtl E016GREY
+Ka  0.4 0.4 0.3
+Kd  0.4 0.4 0.3
+Ks  1.0 1.0 1.0
+d  1.0
+Ns  0.5
+illum 2
+#
+newmtl E016LET2
+Ka  0.9 0.9 0.9
+Kd  0.9 0.9 0.9
+Ks  1.0 1.0 1.0
+d  1.0
+Ns  0.5
+illum 2
+#
+newmtl E016PEG1
+Ka  0.0 0.0 0.0
+Kd  0.0 0.0 0.0
+Ks  0.0 0.0 0.0
+d  1.0
+Ns  0.5
+illum 2
+map_Kd E016L01M.JPG
+map_d E016L01O.JPG
+#
+newmtl E016PEG2
+Ka  0.0 0.0 0.0
+Kd  0.0 0.0 0.0
+Ks  0.0 0.0 0.0
+d  1.0
+Ns  0.5
+illum 2
+map_Kd E016L02M.JPG
+map_d E016L02O.JPG
+#
+newmtl E016PEG3
+Ka  0.0 0.0 0.0
+Kd  0.0 0.0 0.0
+Ks  0.0 0.0 0.0
+d  1.0
+Ns  0.5
+illum 2
+map_Kd E016L03M.JPG
+map_d E016L03O.JPG
+#
+newmtl E016PEG4
+Ka  0.0 0.0 0.0
+Kd  0.0 0.0 0.0
+Ks  0.0 0.0 0.0
+d  1.0
+Ns  0.5
+illum 2
+map_Kd E016L04M.JPG
+map_d E016L04O.JPG
+#
+newmtl E016PEG5
+Ka  0.0 0.0 0.0
+Kd  0.0 0.0 0.0
+Ks  0.0 0.0 0.0
+d  1.0
+Ns  0.5
+illum 2
+map_Kd E016L05M.JPG
+map_d E016L05O.JPG
+#
+newmtl E016REDS
+Ka  1.0 0.1 0.0
+Kd  1.0 0.1 0.0
+Ks  1.0 0.9 0.9
+d  1.0
+Ns  0.5
+illum 2
+#
+newmtl E016SILV
+Ka  0.4 0.4 0.4
+Kd  0.4 0.4 0.4
+Ks  1.0 1.0 1.0
+d  1.0
+Ns  0.5
+illum 2
+#
+newmtl E016TEX1
+Ka  0.2 0.3 0.2
+Kd  0.2 0.3 0.2
+Ks  1.0 1.0 1.0
+d  1.0
+Ns  0.5
+illum 2
+map_Kd E016TEXT.JPG
+#
+newmtl E016WHI2
+Ka  0.9 0.9 0.8
+Kd  0.9 0.9 0.8
+Ks  1.0 1.0 1.0
+d  1.0
+Ns  0.5
+illum 2
+#
+newmtl E016WHIT
+Ka  0.8 0.8 0.7
+Kd  0.8 0.8 0.7
+Ks  1.0 1.0 1.0
+d  1.0
+Ns  0.5
+illum 2
+#
+newmtl E016YELO
+Ka  1.0 0.6 0.1
+Kd  1.0 0.6 0.1
+Ks  1.0 1.0 1.0
+d  1.0
+Ns  0.5
+illum 2
+#
+# EOF
