@@ -86,7 +86,7 @@ public class Main extends SimpleApplication {
         inputManager.addMapping("La#2",new KeyTrigger(KeyInput.KEY_L));
         inputManager.addMapping("Si2",new KeyTrigger(KeyInput.KEY_PERIOD));
         
-        inputManager.addListener(actionlistener, "Do1", "Do#1", "Re1", "Mi1", "Fa1", "Sol1", "Sol#1", "La1", "La#1", "Si1");
+        inputManager.addListener(actionlistener, "Do1", "Do#1", "Re1","Re#1", "Mi1", "Fa1","Fa#1", "Sol1", "Sol#1", "La1", "La#1", "Si1", "Do2", "Do#2", "Re2","Re#2", "Mi2", "Fa2","Fa#2", "Sol2", "Sol#2", "La2", "La#2", "Si2");
     }
     
     private ActionListener actionlistener = new ActionListener() {
@@ -188,6 +188,42 @@ public class Main extends SimpleApplication {
                 rootNode.getChild("Box11").setMaterial(mat);
             }
             
+            if(name.equals("Do2") && isPressed){
+                audioController.playSound(name);
+            }
+            if(name.equals("Do#2") && isPressed){
+                audioController.playSound(name);
+            }
+            if(name.equals("Re2") && isPressed){
+                audioController.playSound(name);
+            }
+            if(name.equals("Re#2") && isPressed){
+                audioController.playSound(name);
+            }
+            if(name.equals("Mi2") && isPressed){
+                audioController.playSound(name);
+            }
+            if(name.equals("Fa2") && isPressed){
+                audioController.playSound(name);
+            }
+            if(name.equals("Fa#2") && isPressed){
+                audioController.playSound(name);
+            }
+            if(name.equals("Sol2") && isPressed){
+                audioController.playSound(name);
+            }
+            if(name.equals("Sol#2") && isPressed){
+                audioController.playSound(name);
+            }
+            if(name.equals("La2") && isPressed){
+                audioController.playSound(name);
+            }
+            if(name.equals("La#2") && isPressed){
+                audioController.playSound(name);
+            }
+            if(name.equals("Si2") && isPressed){
+                audioController.playSound(name);
+            }
         }
         
             
