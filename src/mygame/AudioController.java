@@ -187,79 +187,248 @@ public class AudioController {
         rootNode.attachChild(b2);
     }
     
-    public void playSound(String note){
+    public void playSound(String note, Boolean highpitch, Boolean lowPitch){
         switch (note) {
             case "Do1":
-                c1.playInstance();
+                if(lowPitch){
+                    c1.setPitch(0.5f);
+                    c1.playInstance();
+                }
+                else{
+                    c1.setPitch(1);
+                    c1.playInstance();
+                }
                 break;
             case "Do#1":
-                cs1.playInstance();
+                if(lowPitch){
+                    cs1.setPitch(0.5f);
+                    cs1.playInstance();
+                }
+                else{
+                    cs1.setPitch(1);
+                    cs1.playInstance();
+                }
                 break;
             case "Re1":
-                d1.playInstance();
+                if(lowPitch){
+                    d1.setPitch(0.5f);
+                    d1.playInstance();
+                }
+                else{
+                    d1.setPitch(1);
+                    d1.playInstance();
+                }
                 break;
             case "Re#1":
-                ds1.playInstance();
+                if(lowPitch){
+                    ds1.setPitch(0.5f);
+                    ds1.playInstance();
+                }
+                else{
+                    ds1.setPitch(1);
+                    ds1.playInstance();
+                }
                 break;
             case "Mi1":
-                e1.playInstance();
+                if(lowPitch){
+                    e1.setPitch(0.5f);
+                    e1.playInstance();
+                }
+                else{
+                    e1.setPitch(1);
+                    e1.playInstance();
+                }
                 break;
             case "Fa1":
-                f1.playInstance();
+                if(lowPitch){
+                    f1.setPitch(0.5f);
+                    f1.playInstance();
+                }
+                else{
+                    f1.setPitch(1);
+                    f1.playInstance();
+                }
                 break;
             case "Fa#1":
-                fs1.playInstance();
+                if(lowPitch){
+                    fs1.setPitch(0.5f);
+                    fs1.playInstance();
+                }
+                else{
+                    fs1.setPitch(1);
+                    fs1.playInstance();
+                }
                 break;
             case "Sol1":
-                g1.playInstance();
+                if(lowPitch){
+                    g1.setPitch(0.5f);
+                    g1.playInstance();
+                }
+                else{
+                    g1.setPitch(1);
+                    g1.playInstance();
+                }
                 break;
             case "Sol#1":
-                gs1.playInstance();
+                if(lowPitch){
+                    gs1.setPitch(0.5f);
+                    gs1.playInstance();
+                }
+                else{
+                    gs1.setPitch(1);
+                    gs1.playInstance();
+                }
                 break;
             case "La1":
-                a1.playInstance();
+                if(lowPitch){
+                    a1.setPitch(0.5f);
+                    a1.playInstance();
+                }
+                else{
+                    a1.setPitch(1);
+                    a1.playInstance();
+                }
                 break;
             case "La#1":
-                as1.playInstance();
+                if(lowPitch){
+                    as1.setPitch(0.5f);
+                    as1.playInstance();
+                }
+                else{
+                    as1.setPitch(1);
+                    as1.playInstance();
+                }
                 break;
             case "Si1":
-                b1.playInstance();
+                if(lowPitch){
+                    b1.setPitch(0.5f);
+                    b1.playInstance();
+                }
+                else{
+                    b1.setPitch(1);
+                    b1.playInstance();
+                }
                 break;
             case "Do2":
-                c2.playInstance();
+                if(highpitch){
+                    c2.setPitch(2);
+                    c2.playInstance();
+                }
+                else{
+                    c2.setPitch(1);
+                    c2.playInstance();
+                }
                 break;
             case "Do#2":
-                cs2.playInstance();
+                if(highpitch){
+                    cs2.setPitch(2);
+                    cs2.playInstance();
+                }
+                else{
+                    cs2.setPitch(1);
+                    cs2.playInstance();
+                }
+                    
                 break;
             case "Re2":
-                d2.playInstance();
+                if(highpitch){
+                    d2.setPitch(2);
+                    d2.playInstance();
+                }
+                else{
+                    d2.setPitch(1);
+                    d2.playInstance();
+                }
                 break;
             case "Re#2":
-                ds2.playInstance();
+                if(highpitch){
+                    ds2.setPitch(2);
+                    ds2.playInstance();
+                }
+                else{
+                    ds2.setPitch(1);
+                    ds2.playInstance();
+                }
                 break;
             case "Mi2":
-                e2.playInstance();
+                if(highpitch){
+                    e2.setPitch(2);
+                    e2.playInstance();
+                }
+                else{
+                    e2.setPitch(1);
+                    e2.playInstance();
+                }
                 break;
             case "Fa2":
-                f2.playInstance();
+                if(highpitch){
+                    f2.setPitch(2);
+                    f2.playInstance();
+                }
+                else{
+                    f2.setPitch(1);
+                    f2.playInstance();
+                }
                 break;
             case "Fa#2":
-                fs2.playInstance();
+                if(highpitch){
+                    fs2.setPitch(2);
+                    fs2.playInstance();
+                }
+                else{
+                    fs2.setPitch(1);
+                    fs2.playInstance();
+                }
                 break;
             case "Sol2":
-                g2.playInstance();
+                if(highpitch){
+                    g2.setPitch(2);
+                    g2.playInstance();
+                }
+                else{
+                    g2.setPitch(1);
+                    g2.playInstance();
+                }
                 break;
             case "Sol#2":
-                gs2.playInstance();
+                if(highpitch){
+                    gs2.setPitch(2);
+                    gs2.playInstance();
+                }
+                else{
+                    gs2.setPitch(1);
+                    gs2.playInstance();
+                }
                 break;
             case "La2":
-                a2.playInstance();
+                if(highpitch){
+                    a2.setPitch(2);
+                    a2.playInstance();
+                }
+                else{
+                    a2.setPitch(1);
+                    a2.playInstance();
+                }
                 break;
             case "La#2":
-                as2.playInstance();
+                if(highpitch){
+                    as2.setPitch(2);
+                    as2.playInstance();
+                }
+                else{
+                    as2.setPitch(1);
+                    as2.playInstance();
+                }
                 break;
             case "Si2":
-                b2.playInstance();
+                if(highpitch){
+                    b2.setPitch(2);
+                    b2.playInstance();
+                }
+                else{
+                    b2.setPitch(1);
+                    b2.playInstance();
+                }
                 break;
             default:
                 break;

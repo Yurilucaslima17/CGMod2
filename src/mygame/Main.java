@@ -24,6 +24,8 @@ public class Main extends SimpleApplication {
     private AudioController audioController;
     private Material apertado;
     private Material mat;
+    private Boolean highpitch = false;
+    private Boolean lowpitch = false;
     
     public static void main(String[] args) {
         Main app = new Main();
@@ -73,6 +75,9 @@ public class Main extends SimpleApplication {
         inputManager.addMapping("La#1",new KeyTrigger(KeyInput.KEY_7));
         inputManager.addMapping("Si1",new KeyTrigger(KeyInput.KEY_U));
         
+        inputManager.addMapping("HighPitch", new KeyTrigger(KeyInput.KEY_SPACE));
+        inputManager.addMapping("LowPitch", new KeyTrigger(KeyInput.KEY_LSHIFT));
+        
         inputManager.addMapping("Do2",new KeyTrigger(KeyInput.KEY_C));
         inputManager.addMapping("Do#2",new KeyTrigger(KeyInput.KEY_F));
         inputManager.addMapping("Re2",new KeyTrigger(KeyInput.KEY_V));
@@ -86,14 +91,25 @@ public class Main extends SimpleApplication {
         inputManager.addMapping("La#2",new KeyTrigger(KeyInput.KEY_L));
         inputManager.addMapping("Si2",new KeyTrigger(KeyInput.KEY_PERIOD));
         
-        inputManager.addListener(actionlistener, "Do1", "Do#1", "Re1","Re#1", "Mi1", "Fa1","Fa#1", "Sol1", "Sol#1", "La1", "La#1", "Si1", "Do2", "Do#2", "Re2","Re#2", "Mi2", "Fa2","Fa#2", "Sol2", "Sol#2", "La2", "La#2", "Si2");
+        inputManager.addListener(actionlistener, "Do1", "Do#1", "Re1","Re#1", "Mi1", "Fa1","Fa#1", "Sol1", "Sol#1", "La1", "La#1", "Si1", "Do2", "Do#2", "Re2","Re#2", "Mi2", "Fa2","Fa#2", "Sol2", "Sol#2", "La2", "La#2", "Si2", "HighPitch", "LowPitch");
     }
     
     private ActionListener actionlistener = new ActionListener() {
         @Override
         public void onAction(String name, boolean isPressed, float tpf) {
+            
+            if(name.equals("HighPitch") && isPressed)
+                highpitch = true;
+            else if(name.equals("HighPitch") && !isPressed)
+                highpitch = false;
+            
+            if(name.equals("LowPitch") && isPressed)
+                lowpitch = true;
+            else if(name.equals("LowPitch") && !isPressed)
+                lowpitch = false;
+            
             if(name.equals("Do1") && isPressed){
-                audioController.playSound(name);
+                audioController.playSound(name, highpitch, lowpitch);
                 rootNode.getChild("Box0").setMaterial(apertado);
             }
             if(name.equals("Do1") && !isPressed){
@@ -101,7 +117,7 @@ public class Main extends SimpleApplication {
             }
             
             if(name.equals("Do#1") && isPressed){
-                audioController.playSound(name);
+                audioController.playSound(name, highpitch, lowpitch);
                 rootNode.getChild("Box1").setMaterial(apertado);
             }
             if(name.equals("Do#1") && !isPressed){
@@ -109,7 +125,7 @@ public class Main extends SimpleApplication {
             }
             
             if(name.equals("Re1") && isPressed){
-                audioController.playSound(name);
+                audioController.playSound(name, highpitch, lowpitch);
                 rootNode.getChild("Box2").setMaterial(apertado);
             }
             if(name.equals("Re1") && !isPressed){
@@ -117,7 +133,7 @@ public class Main extends SimpleApplication {
             }
             
             if(name.equals("Re#1") && isPressed){
-                audioController.playSound(name);
+                audioController.playSound(name, highpitch, lowpitch);
                 rootNode.getChild("Box3").setMaterial(apertado);
             }
             if(name.equals("Re#1") && !isPressed){
@@ -125,7 +141,7 @@ public class Main extends SimpleApplication {
             }
             
             if(name.equals("Mi1") && isPressed){
-                audioController.playSound(name);
+                audioController.playSound(name, highpitch, lowpitch);
                 rootNode.getChild("Box4").setMaterial(apertado);
             }
             if(name.equals("Mi1") && !isPressed){
@@ -133,7 +149,7 @@ public class Main extends SimpleApplication {
             }
             
             if(name.equals("Fa1") && isPressed){
-                audioController.playSound(name);
+                audioController.playSound(name, highpitch, lowpitch);
                 rootNode.getChild("Box5").setMaterial(apertado);
             }
             if(name.equals("Fa1") && !isPressed){
@@ -141,7 +157,7 @@ public class Main extends SimpleApplication {
             }
             
             if(name.equals("Fa#1") && isPressed){
-                audioController.playSound(name);
+                audioController.playSound(name, highpitch, lowpitch);
                 rootNode.getChild("Box6").setMaterial(apertado);
             }
             if(name.equals("Fa#1") && !isPressed){
@@ -149,7 +165,7 @@ public class Main extends SimpleApplication {
             }
             
             if(name.equals("Sol1") && isPressed){
-                audioController.playSound(name);
+                audioController.playSound(name, highpitch, lowpitch);
                 rootNode.getChild("Box7").setMaterial(apertado);
             }
             if(name.equals("Sol1") && !isPressed){
@@ -157,7 +173,7 @@ public class Main extends SimpleApplication {
             }
             
             if(name.equals("Sol#1") && isPressed){
-                audioController.playSound(name);
+                audioController.playSound(name, highpitch, lowpitch);
                 rootNode.getChild("Box8").setMaterial(apertado);
             }
             if(name.equals("Sol#1") && !isPressed){
@@ -165,7 +181,7 @@ public class Main extends SimpleApplication {
             }
             
             if(name.equals("La1") && isPressed){
-                audioController.playSound(name);
+                audioController.playSound(name, highpitch, lowpitch);
                 rootNode.getChild("Box9").setMaterial(apertado);
             }
             if(name.equals("La1") && !isPressed){
@@ -173,7 +189,7 @@ public class Main extends SimpleApplication {
             }
             
             if(name.equals("La#1") && isPressed){
-                audioController.playSound(name);
+                audioController.playSound(name, highpitch, lowpitch);
                 rootNode.getChild("Box10").setMaterial(apertado);
             }
             if(name.equals("La#1") && !isPressed){
@@ -181,7 +197,7 @@ public class Main extends SimpleApplication {
             }
             
             if(name.equals("Si1") && isPressed){
-                audioController.playSound(name);
+                audioController.playSound(name, highpitch, lowpitch);
                 rootNode.getChild("Box11").setMaterial(apertado);
             }
             if(name.equals("Si1") && !isPressed){
@@ -189,40 +205,40 @@ public class Main extends SimpleApplication {
             }
             
             if(name.equals("Do2") && isPressed){
-                audioController.playSound(name);
+                audioController.playSound(name, highpitch, lowpitch);
             }
             if(name.equals("Do#2") && isPressed){
-                audioController.playSound(name);
+                audioController.playSound(name, highpitch, lowpitch);
             }
             if(name.equals("Re2") && isPressed){
-                audioController.playSound(name);
+                audioController.playSound(name, highpitch, lowpitch);
             }
             if(name.equals("Re#2") && isPressed){
-                audioController.playSound(name);
+                audioController.playSound(name, highpitch, lowpitch);
             }
             if(name.equals("Mi2") && isPressed){
-                audioController.playSound(name);
+                audioController.playSound(name, highpitch, lowpitch);
             }
             if(name.equals("Fa2") && isPressed){
-                audioController.playSound(name);
+                audioController.playSound(name, highpitch, lowpitch);
             }
             if(name.equals("Fa#2") && isPressed){
-                audioController.playSound(name);
+                audioController.playSound(name, highpitch, lowpitch);
             }
             if(name.equals("Sol2") && isPressed){
-                audioController.playSound(name);
+                audioController.playSound(name, highpitch, lowpitch);
             }
             if(name.equals("Sol#2") && isPressed){
-                audioController.playSound(name);
+                audioController.playSound(name, highpitch, lowpitch);
             }
             if(name.equals("La2") && isPressed){
-                audioController.playSound(name);
+                audioController.playSound(name, highpitch, lowpitch);
             }
             if(name.equals("La#2") && isPressed){
-                audioController.playSound(name);
+                audioController.playSound(name, highpitch, lowpitch);
             }
             if(name.equals("Si2") && isPressed){
-                audioController.playSound(name);
+                audioController.playSound(name, highpitch, lowpitch);
             }
         }
         
