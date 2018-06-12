@@ -41,6 +41,19 @@ public class AudioController {
     private AudioNode as2;
     private AudioNode b2;
     
+    private AudioNode c3;
+    private AudioNode cs3;
+    private AudioNode d3;
+    private AudioNode ds3;
+    private AudioNode e3;
+    private AudioNode f3;
+    private AudioNode fs3;
+    private AudioNode g3;
+    private AudioNode gs3;
+    private AudioNode a3;
+    private AudioNode as3;
+    private AudioNode b3;
+    
     public AudioController(Node rootNode, AssetManager assetManager){
         c1 = new AudioNode(assetManager, "Sounds/do1.wav", DataType.Buffer);
         c1.setPositional(false);
@@ -185,6 +198,78 @@ public class AudioController {
         b2.setLooping(false);
         b2.setVolume(2);
         rootNode.attachChild(b2);
+        
+        c3 = new AudioNode(assetManager, "Sounds/do3.wav", DataType.Buffer);
+        c3.setPositional(false);
+        c3.setLooping(false);
+        c3.setVolume(2);
+        rootNode.attachChild(c3);
+        
+        cs3 = new AudioNode(assetManager, "Sounds/do#3.wav", DataType.Buffer);
+        cs3.setPositional(false);
+        cs3.setLooping(false);
+        cs3.setVolume(2);
+        rootNode.attachChild(cs3);
+        
+        d3 = new AudioNode(assetManager, "Sounds/re3.wav", DataType.Buffer);
+        d3.setPositional(false);
+        d3.setLooping(false);
+        d3.setVolume(2);
+        rootNode.attachChild(d3);
+        
+        ds3 = new AudioNode(assetManager, "Sounds/re#3.wav", DataType.Buffer);
+        ds3.setPositional(false);
+        ds3.setLooping(false);
+        ds3.setVolume(2);
+        rootNode.attachChild(ds3);
+        
+        e3 = new AudioNode(assetManager, "Sounds/mi3.wav", DataType.Buffer);
+        e3.setPositional(false);
+        e3.setLooping(false);
+        e3.setVolume(2);
+        rootNode.attachChild(e3);
+        
+        f3 = new AudioNode(assetManager, "Sounds/fa3.wav", DataType.Buffer);
+        f3.setPositional(false);
+        f3.setLooping(false);
+        f3.setVolume(2);
+        rootNode.attachChild(f3);
+        
+        fs3 = new AudioNode(assetManager, "Sounds/fa#3.wav", DataType.Buffer);
+        fs3.setPositional(false);
+        fs3.setLooping(false);
+        fs3.setVolume(2);
+        rootNode.attachChild(fs3);
+        
+        g3 = new AudioNode(assetManager, "Sounds/sol3.wav", DataType.Buffer);
+        g3.setPositional(false);
+        g3.setLooping(false);
+        g3.setVolume(2);
+        rootNode.attachChild(g3);
+        
+        gs3 = new AudioNode(assetManager, "Sounds/sol#3.wav", DataType.Buffer);
+        gs3.setPositional(false);
+        gs3.setLooping(false);
+        gs3.setVolume(2);
+        rootNode.attachChild(gs3);
+        
+        a3 = new AudioNode(assetManager, "Sounds/la3.wav", DataType.Buffer);
+        a3.setPositional(false);
+        a3.setLooping(false);
+        a3.setVolume(2);
+        rootNode.attachChild(a3);
+        
+        as3 = new AudioNode(assetManager, "Sounds/la#3.wav", DataType.Buffer);
+        as3.setPositional(false);
+        as3.setLooping(false);
+        as3.setVolume(2);
+        rootNode.attachChild(as3);
+        
+        b3 = new AudioNode(assetManager, "Sounds/si3.wav", DataType.Buffer);
+        b3.setPositional(false);
+        b3.setLooping(false);
+        b3.setVolume(2);
+        rootNode.attachChild(b3);
     }
     
     public void playSound(String note, Boolean highpitch, Boolean lowPitch){
@@ -311,8 +396,7 @@ public class AudioController {
                 break;
             case "Do2":
                 if(highpitch){
-                    c2.setPitch(2);
-                    c2.playInstance();
+                    c3.playInstance();
                 }
                 else{
                     c2.setPitch(1);
@@ -321,8 +405,7 @@ public class AudioController {
                 break;
             case "Do#2":
                 if(highpitch){
-                    cs2.setPitch(2);
-                    cs2.playInstance();
+                    cs3.playInstance();
                 }
                 else{
                     cs2.setPitch(1);
@@ -332,8 +415,7 @@ public class AudioController {
                 break;
             case "Re2":
                 if(highpitch){
-                    d2.setPitch(2);
-                    d2.playInstance();
+                    d3.playInstance();
                 }
                 else{
                     d2.setPitch(1);
@@ -342,8 +424,7 @@ public class AudioController {
                 break;
             case "Re#2":
                 if(highpitch){
-                    ds2.setPitch(2);
-                    ds2.playInstance();
+                    ds3.playInstance();
                 }
                 else{
                     ds2.setPitch(1);
@@ -352,8 +433,7 @@ public class AudioController {
                 break;
             case "Mi2":
                 if(highpitch){
-                    e2.setPitch(2);
-                    e2.playInstance();
+                    e3.playInstance();
                 }
                 else{
                     e2.setPitch(1);
@@ -362,8 +442,7 @@ public class AudioController {
                 break;
             case "Fa2":
                 if(highpitch){
-                    f2.setPitch(2);
-                    f2.playInstance();
+                    f3.playInstance();
                 }
                 else{
                     f2.setPitch(1);
@@ -372,8 +451,7 @@ public class AudioController {
                 break;
             case "Fa#2":
                 if(highpitch){
-                    fs2.setPitch(2);
-                    fs2.playInstance();
+                    fs3.playInstance();
                 }
                 else{
                     fs2.setPitch(1);
@@ -382,8 +460,7 @@ public class AudioController {
                 break;
             case "Sol2":
                 if(highpitch){
-                    g2.setPitch(2);
-                    g2.playInstance();
+                    g3.playInstance();
                 }
                 else{
                     g2.setPitch(1);
@@ -392,8 +469,7 @@ public class AudioController {
                 break;
             case "Sol#2":
                 if(highpitch){
-                    gs2.setPitch(2);
-                    gs2.playInstance();
+                    gs3.playInstance();
                 }
                 else{
                     gs2.setPitch(1);
@@ -402,8 +478,7 @@ public class AudioController {
                 break;
             case "La2":
                 if(highpitch){
-                    a2.setPitch(2);
-                    a2.playInstance();
+                    a3.playInstance();
                 }
                 else{
                     a2.setPitch(1);
@@ -412,8 +487,7 @@ public class AudioController {
                 break;
             case "La#2":
                 if(highpitch){
-                    as2.setPitch(2);
-                    as2.playInstance();
+                    as3.playInstance();
                 }
                 else{
                     as2.setPitch(1);
@@ -422,8 +496,7 @@ public class AudioController {
                 break;
             case "Si2":
                 if(highpitch){
-                    b2.setPitch(2);
-                    b2.playInstance();
+                    b3.playInstance();
                 }
                 else{
                     b2.setPitch(1);
