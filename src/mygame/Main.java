@@ -135,191 +135,335 @@ public class Main extends SimpleApplication {
             
             if(name.equals("Do1") && isPressed){
                 audioController.playSound(name, highpitch, lowpitch);
-                rootNode.getChild("Box7").setMaterial(apertado);
+                if(!lowpitch)
+                    rootNode.getChild("Box7").setMaterial(apertado);
+                else
+                    rootNode.getChild("Box0").setMaterial(apertado);
             }
             if(name.equals("Do1") && !isPressed){
-                rootNode.getChild("Box7").setMaterial(mat);
+                if(!lowpitch)
+                    rootNode.getChild("Box7").setMaterial(mat);
+                else
+                    rootNode.getChild("Box0").setMaterial(mat);
             }
             
             if(name.equals("Do#1") && isPressed){
                 audioController.playSound(name, highpitch, lowpitch);
-                rootNode.getChild("Box#7").setMaterial(apertado);
+                if(!lowpitch)
+                    rootNode.getChild("Box#7").setMaterial(apertado);
+                else
+                    rootNode.getChild("Box#0").setMaterial(apertado);
             }
             if(name.equals("Do#1") && !isPressed){
-                rootNode.getChild("Box#7").setMaterial(mat);
+                if(!lowpitch)
+                    rootNode.getChild("Box#7").setMaterial(mat);
+                else
+                    rootNode.getChild("Box#0").setMaterial(mat);
             }
             
             if(name.equals("Re1") && isPressed){
                 audioController.playSound(name, highpitch, lowpitch);
-                rootNode.getChild("Box8").setMaterial(apertado);
+                if(!lowpitch)
+                    rootNode.getChild("Box8").setMaterial(apertado);
+                else
+                    rootNode.getChild("Box1").setMaterial(apertado);
             }
             if(name.equals("Re1") && !isPressed){
-                rootNode.getChild("Box8").setMaterial(mat);
+                if(!lowpitch)
+                    rootNode.getChild("Box8").setMaterial(mat);
+                else
+                    rootNode.getChild("Box1").setMaterial(mat);
             }
             
             if(name.equals("Re#1") && isPressed){
                 audioController.playSound(name, highpitch, lowpitch);
-                rootNode.getChild("Box#8").setMaterial(apertado);
+                if(!lowpitch)
+                    rootNode.getChild("Box#8").setMaterial(apertado);
+                else
+                    rootNode.getChild("Box#1").setMaterial(apertado);
             }
             if(name.equals("Re#1") && !isPressed){
-                rootNode.getChild("Box#8").setMaterial(mat);
+                if(!lowpitch)
+                    rootNode.getChild("Box#8").setMaterial(mat);
+                else
+                    rootNode.getChild("Box#1").setMaterial(mat);
             }
             
             if(name.equals("Mi1") && isPressed){
                 audioController.playSound(name, highpitch, lowpitch);
-                rootNode.getChild("Box9").setMaterial(apertado);
+                if(!lowpitch)
+                    rootNode.getChild("Box9").setMaterial(apertado);
+                else
+                    rootNode.getChild("Box2").setMaterial(apertado);
             }
             if(name.equals("Mi1") && !isPressed){
-                rootNode.getChild("Box9").setMaterial(mat);
+                if(!lowpitch)
+                    rootNode.getChild("Box9").setMaterial(mat);
+                else
+                    rootNode.getChild("Box2").setMaterial(mat);
             }
             
             if(name.equals("Fa1") && isPressed){
                 audioController.playSound(name, highpitch, lowpitch);
-                rootNode.getChild("Box10").setMaterial(apertado);
+                if(!lowpitch)
+                    rootNode.getChild("Box10").setMaterial(apertado);
+                else
+                    rootNode.getChild("Box3").setMaterial(apertado);
             }
             if(name.equals("Fa1") && !isPressed){
-                rootNode.getChild("Box10").setMaterial(mat);
+                if(!lowpitch)
+                    rootNode.getChild("Box10").setMaterial(mat);
+                else
+                    rootNode.getChild("Box3").setMaterial(mat);
             }
             
             if(name.equals("Fa#1") && isPressed){
                 audioController.playSound(name, highpitch, lowpitch);
-                rootNode.getChild("Box#10").setMaterial(apertado);
+                if(!lowpitch)
+                    rootNode.getChild("Box#10").setMaterial(apertado);
+                else
+                    rootNode.getChild("Box#3").setMaterial(apertado);
             }
             if(name.equals("Fa#1") && !isPressed){
-                rootNode.getChild("Box#10").setMaterial(mat);
+                if(!lowpitch)
+                    rootNode.getChild("Box#10").setMaterial(mat);
+                else
+                    rootNode.getChild("Box#3").setMaterial(mat);
             }
             
             if(name.equals("Sol1") && isPressed){
                 audioController.playSound(name, highpitch, lowpitch);
-                rootNode.getChild("Box11").setMaterial(apertado);
+                if(!lowpitch)
+                    rootNode.getChild("Box11").setMaterial(apertado);
+                else
+                    rootNode.getChild("Box4").setMaterial(apertado);
             }
             if(name.equals("Sol1") && !isPressed){
-                rootNode.getChild("Box11").setMaterial(mat);
+                if(!lowpitch)
+                    rootNode.getChild("Box11").setMaterial(mat);
+                else
+                    rootNode.getChild("Box4").setMaterial(mat);
             }
             
             if(name.equals("Sol#1") && isPressed){
                 audioController.playSound(name, highpitch, lowpitch);
-                rootNode.getChild("Box#11").setMaterial(apertado);
+                if(!lowpitch)
+                    rootNode.getChild("Box#11").setMaterial(apertado);
+                else
+                    rootNode.getChild("Box#4").setMaterial(apertado);
             }
             if(name.equals("Sol#1") && !isPressed){
-                rootNode.getChild("Box#11").setMaterial(mat);
+                if(!lowpitch)
+                    rootNode.getChild("Box#11").setMaterial(mat);
+                else
+                    rootNode.getChild("Box#4").setMaterial(mat);
             }
             
             if(name.equals("La1") && isPressed){
                 audioController.playSound(name, highpitch, lowpitch);
-                rootNode.getChild("Box12").setMaterial(apertado);
+                if(!lowpitch)
+                    rootNode.getChild("Box12").setMaterial(apertado);
+                else
+                    rootNode.getChild("Box5").setMaterial(apertado);
             }
             if(name.equals("La1") && !isPressed){
-                rootNode.getChild("Box12").setMaterial(mat);
+                if(!lowpitch)
+                    rootNode.getChild("Box12").setMaterial(mat);
+                else
+                    rootNode.getChild("Box5").setMaterial(mat);
             }
             
             if(name.equals("La#1") && isPressed){
                 audioController.playSound(name, highpitch, lowpitch);
-                rootNode.getChild("Box#12").setMaterial(apertado);
+                if(!lowpitch)
+                    rootNode.getChild("Box#12").setMaterial(apertado);
+                else
+                    rootNode.getChild("Box#5").setMaterial(apertado);
             }
             if(name.equals("La#1") && !isPressed){
-                rootNode.getChild("Box#12").setMaterial(mat);
+                if(!lowpitch)
+                    rootNode.getChild("Box#12").setMaterial(mat);
+                else
+                    rootNode.getChild("Box#5").setMaterial(mat);
             }
             
             if(name.equals("Si1") && isPressed){
                 audioController.playSound(name, highpitch, lowpitch);
-                rootNode.getChild("Box13").setMaterial(apertado);
+                if(!lowpitch)
+                    rootNode.getChild("Box13").setMaterial(apertado);
+                else
+                    rootNode.getChild("Box6").setMaterial(apertado);
             }
             if(name.equals("Si1") && !isPressed){
-                rootNode.getChild("Box13").setMaterial(mat);
+                if(!lowpitch)
+                    rootNode.getChild("Box13").setMaterial(mat);
+                else
+                    rootNode.getChild("Box6").setMaterial(mat);
             }
             
             if(name.equals("Do2") && isPressed){
                 audioController.playSound(name, highpitch, lowpitch);
-                rootNode.getChild("Box14").setMaterial(apertado);
+                if(!highpitch)
+                    rootNode.getChild("Box14").setMaterial(apertado);
+                else
+                    rootNode.getChild("Box21").setMaterial(apertado);
             }
             if(name.equals("Do2") && !isPressed){
-                rootNode.getChild("Box14").setMaterial(mat);
+                if(!highpitch)
+                    rootNode.getChild("Box14").setMaterial(mat);
+                else
+                    rootNode.getChild("Box21").setMaterial(mat);
             }
             if(name.equals("Do#2") && isPressed){
                 audioController.playSound(name, highpitch, lowpitch);
-                rootNode.getChild("Box#14").setMaterial(apertado);
+                if(!highpitch)
+                    rootNode.getChild("Box#14").setMaterial(apertado);
+                else
+                    rootNode.getChild("Box#21").setMaterial(apertado);
             }
             if(name.equals("Do#2") && !isPressed){
-                rootNode.getChild("Box#14").setMaterial(mat);
+                if(!highpitch)
+                    rootNode.getChild("Box#14").setMaterial(mat);
+                else
+                    rootNode.getChild("Box#21").setMaterial(mat);
             }
             if(name.equals("Re2") && isPressed){
                 audioController.playSound(name, highpitch, lowpitch);
-                rootNode.getChild("Box15").setMaterial(apertado);
+                if(!highpitch)
+                    rootNode.getChild("Box15").setMaterial(apertado);
+                else
+                    rootNode.getChild("Box22").setMaterial(apertado);
             }
             if(name.equals("Re2") && !isPressed){
-                rootNode.getChild("Box15").setMaterial(mat);
+                if(!highpitch)
+                    rootNode.getChild("Box15").setMaterial(mat);
+                else
+                    rootNode.getChild("Box22").setMaterial(mat);
             }
             if(name.equals("Re#2") && isPressed){
                 audioController.playSound(name, highpitch, lowpitch);
-                rootNode.getChild("Box#15").setMaterial(apertado);
+                if(!highpitch)
+                    rootNode.getChild("Box#15").setMaterial(apertado);
+                else
+                    rootNode.getChild("Box#22").setMaterial(apertado);
             }
             if(name.equals("Re#2") && !isPressed){
-                rootNode.getChild("Box#15").setMaterial(mat2);
+                if(!highpitch)
+                    rootNode.getChild("Box#15").setMaterial(mat2);
+                else
+                    rootNode.getChild("Box#22").setMaterial(mat2);
             }
             
             if(name.equals("Mi2") && isPressed){
                 audioController.playSound(name, highpitch, lowpitch);
-                rootNode.getChild("Box16").setMaterial(apertado);
+                if(!highpitch)
+                    rootNode.getChild("Box16").setMaterial(apertado);
+                else
+                    rootNode.getChild("Box23").setMaterial(apertado);
             }
             if(name.equals("Mi2") && !isPressed){
-                rootNode.getChild("Box16").setMaterial(mat);
+                if(!highpitch)
+                    rootNode.getChild("Box16").setMaterial(mat);
+                else
+                    rootNode.getChild("Box23").setMaterial(mat);
             }
             
             if(name.equals("Fa2") && isPressed){
                 audioController.playSound(name, highpitch, lowpitch);
-                rootNode.getChild("Box17").setMaterial(apertado);
+                if(!highpitch)
+                    rootNode.getChild("Box17").setMaterial(apertado);
+                else
+                    rootNode.getChild("Box24").setMaterial(apertado);
             }
             if(name.equals("Fa2") && !isPressed){
-                rootNode.getChild("Box17").setMaterial(mat);
+                if(!highpitch)
+                    rootNode.getChild("Box17").setMaterial(mat);
+                else
+                    rootNode.getChild("Box24").setMaterial(mat);
             }
             
             if(name.equals("Fa#2") && isPressed){
                 audioController.playSound(name, highpitch, lowpitch);
-                rootNode.getChild("Box#17").setMaterial(apertado);
+                if(!highpitch)
+                    rootNode.getChild("Box#17").setMaterial(apertado);
+                else
+                    rootNode.getChild("Box#24").setMaterial(apertado);
             }
             if(name.equals("Fa#2") && !isPressed){
-                rootNode.getChild("Box#17").setMaterial(mat2);
+                if(!highpitch)
+                    rootNode.getChild("Box#17").setMaterial(mat2);
+                else
+                    rootNode.getChild("Box#24").setMaterial(mat2);
             }
             
             if(name.equals("Sol2") && isPressed){
                 audioController.playSound(name, highpitch, lowpitch);
-                rootNode.getChild("Box18").setMaterial(apertado);
+                if(!highpitch)
+                    rootNode.getChild("Box18").setMaterial(apertado);
+                else
+                    rootNode.getChild("Box25").setMaterial(apertado);
             }
             if(name.equals("Sol2") && !isPressed){
-                rootNode.getChild("Box18").setMaterial(mat);
+                if(!highpitch)
+                    rootNode.getChild("Box18").setMaterial(mat);
+                else
+                    rootNode.getChild("Box25").setMaterial(mat);
             }
             
             if(name.equals("Sol#2") && isPressed){
                 audioController.playSound(name, highpitch, lowpitch);
-                rootNode.getChild("Box#18").setMaterial(apertado);
+                if(!highpitch)
+                    rootNode.getChild("Box#18").setMaterial(apertado);
+                else
+                    rootNode.getChild("Box#25").setMaterial(apertado);
             }
             if(name.equals("Sol#2") && !isPressed){
-                rootNode.getChild("Box#18").setMaterial(mat2);
+                if(!highpitch)
+                    rootNode.getChild("Box#18").setMaterial(mat2);
+                else
+                    rootNode.getChild("Box#25").setMaterial(mat2);
             }
             
             if(name.equals("La2") && isPressed){
                 audioController.playSound(name, highpitch, lowpitch);
-                rootNode.getChild("Box19").setMaterial(apertado);
+                if(!highpitch)
+                    rootNode.getChild("Box19").setMaterial(apertado);
+                else
+                    rootNode.getChild("Box26").setMaterial(apertado);
             }
             if(name.equals("La2") && !isPressed){
-                rootNode.getChild("Box19").setMaterial(mat);
+                if(!highpitch)
+                    rootNode.getChild("Box19").setMaterial(mat);
+                else
+                    rootNode.getChild("Box26").setMaterial(mat);
             }
             
             if(name.equals("La#2") && isPressed){
                 audioController.playSound(name, highpitch, lowpitch);
-                rootNode.getChild("Box#19").setMaterial(apertado);
+                if(!highpitch)
+                    rootNode.getChild("Box#19").setMaterial(apertado);
+                else
+                    rootNode.getChild("Box#26").setMaterial(apertado);
             }
             if(name.equals("La#2") && !isPressed){
-                rootNode.getChild("Box#19").setMaterial(mat2);
+                if(!highpitch)
+                    rootNode.getChild("Box#19").setMaterial(mat2);
+                else
+                    rootNode.getChild("Box#26").setMaterial(mat2);
             }
             
             if(name.equals("Si2") && isPressed){
                 audioController.playSound(name, highpitch, lowpitch);
-                rootNode.getChild("Box20").setMaterial(apertado);
+                if(!highpitch)
+                    rootNode.getChild("Box20").setMaterial(apertado);
+                else
+                    rootNode.getChild("Box27").setMaterial(apertado);
             }
             if(name.equals("Si2") && !isPressed){
-                rootNode.getChild("Box20").setMaterial(mat);
+                if(!highpitch)
+                    rootNode.getChild("Box20").setMaterial(mat);
+                else
+                    rootNode.getChild("Box27").setMaterial(mat);
             }
         }
         
