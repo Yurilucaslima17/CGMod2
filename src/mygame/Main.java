@@ -58,6 +58,13 @@ public class Main extends SimpleApplication {
             geom.setLocalTranslation(i*2.25f, 0, 0);
             rootNode.attachChild(geom);
         }
+        mat.setColor("Color", ColorRGBA.Black);
+        Box c = new Box(0.0001f,0.0001f,0.0001f);
+        Geometry geomc = new Geometry("Box28",c);
+        geomc.setMaterial(mat);
+        geomc.setLocalTranslation(29.75f, 0, 0);
+        rootNode.attachChild(geomc);
+        mat.setColor("Color", ColorRGBA.White);
         
         mat2 = new Material(assetManager, "Common/MatDefs/Misc/Unshaded.j3md");
         mat2.setColor("Color", ColorRGBA.Orange);
@@ -77,7 +84,7 @@ public class Main extends SimpleApplication {
         cam.setLocation(new Vector3f(30f, 30f, 38f));
         Quaternion q = new Quaternion();
         q.fromAngleAxis(-FastMath.HALF_PI/12, Vector3f.UNIT_X);
-        cam.lookAt(rootNode.getChild("Box13").getLocalTranslation(),Vector3f.UNIT_Y);
+        cam.lookAt(rootNode.getChild("Box28").getLocalTranslation(),Vector3f.UNIT_Y);
         initKeys();
         flyCam.setEnabled(false);
     }
@@ -156,9 +163,9 @@ public class Main extends SimpleApplication {
             }
             if(name.equals("Do#1") && !isPressed){
                 if(!lowpitch)
-                    rootNode.getChild("Box#7").setMaterial(mat);
+                    rootNode.getChild("Box#7").setMaterial(mat2);
                 else
-                    rootNode.getChild("Box#0").setMaterial(mat);
+                    rootNode.getChild("Box#0").setMaterial(mat2);
             }
             
             if(name.equals("Re1") && isPressed){
@@ -184,9 +191,9 @@ public class Main extends SimpleApplication {
             }
             if(name.equals("Re#1") && !isPressed){
                 if(!lowpitch)
-                    rootNode.getChild("Box#8").setMaterial(mat);
+                    rootNode.getChild("Box#8").setMaterial(mat2);
                 else
-                    rootNode.getChild("Box#1").setMaterial(mat);
+                    rootNode.getChild("Box#1").setMaterial(mat2);
             }
             
             if(name.equals("Mi1") && isPressed){
@@ -226,9 +233,9 @@ public class Main extends SimpleApplication {
             }
             if(name.equals("Fa#1") && !isPressed){
                 if(!lowpitch)
-                    rootNode.getChild("Box#10").setMaterial(mat);
+                    rootNode.getChild("Box#10").setMaterial(mat2);
                 else
-                    rootNode.getChild("Box#3").setMaterial(mat);
+                    rootNode.getChild("Box#3").setMaterial(mat2);
             }
             
             if(name.equals("Sol1") && isPressed){
@@ -254,9 +261,9 @@ public class Main extends SimpleApplication {
             }
             if(name.equals("Sol#1") && !isPressed){
                 if(!lowpitch)
-                    rootNode.getChild("Box#11").setMaterial(mat);
+                    rootNode.getChild("Box#11").setMaterial(mat2);
                 else
-                    rootNode.getChild("Box#4").setMaterial(mat);
+                    rootNode.getChild("Box#4").setMaterial(mat2);
             }
             
             if(name.equals("La1") && isPressed){
@@ -282,9 +289,9 @@ public class Main extends SimpleApplication {
             }
             if(name.equals("La#1") && !isPressed){
                 if(!lowpitch)
-                    rootNode.getChild("Box#12").setMaterial(mat);
+                    rootNode.getChild("Box#12").setMaterial(mat2);
                 else
-                    rootNode.getChild("Box#5").setMaterial(mat);
+                    rootNode.getChild("Box#5").setMaterial(mat2);
             }
             
             if(name.equals("Si1") && isPressed){
@@ -323,9 +330,9 @@ public class Main extends SimpleApplication {
             }
             if(name.equals("Do#2") && !isPressed){
                 if(!highpitch)
-                    rootNode.getChild("Box#14").setMaterial(mat);
+                    rootNode.getChild("Box#14").setMaterial(mat2);
                 else
-                    rootNode.getChild("Box#21").setMaterial(mat);
+                    rootNode.getChild("Box#21").setMaterial(mat2);
             }
             if(name.equals("Re2") && isPressed){
                 audioController.playSound(name, highpitch, lowpitch);
