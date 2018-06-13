@@ -148,9 +148,8 @@ public class Main extends SimpleApplication {
                     rootNode.getChild("Box0").setMaterial(apertado);
             }
             if(name.equals("Do1") && !isPressed){
-                if(!lowpitch)
                     rootNode.getChild("Box7").setMaterial(mat);
-                else
+                
                     rootNode.getChild("Box0").setMaterial(mat);
             }
             
@@ -162,9 +161,8 @@ public class Main extends SimpleApplication {
                     rootNode.getChild("Box#0").setMaterial(apertado);
             }
             if(name.equals("Do#1") && !isPressed){
-                if(!lowpitch)
                     rootNode.getChild("Box#7").setMaterial(mat2);
-                else
+                
                     rootNode.getChild("Box#0").setMaterial(mat2);
             }
             
@@ -176,9 +174,8 @@ public class Main extends SimpleApplication {
                     rootNode.getChild("Box1").setMaterial(apertado);
             }
             if(name.equals("Re1") && !isPressed){
-                if(!lowpitch)
                     rootNode.getChild("Box8").setMaterial(mat);
-                else
+                
                     rootNode.getChild("Box1").setMaterial(mat);
             }
             
@@ -190,9 +187,8 @@ public class Main extends SimpleApplication {
                     rootNode.getChild("Box#1").setMaterial(apertado);
             }
             if(name.equals("Re#1") && !isPressed){
-                if(!lowpitch)
                     rootNode.getChild("Box#8").setMaterial(mat2);
-                else
+                
                     rootNode.getChild("Box#1").setMaterial(mat2);
             }
             
@@ -204,9 +200,8 @@ public class Main extends SimpleApplication {
                     rootNode.getChild("Box2").setMaterial(apertado);
             }
             if(name.equals("Mi1") && !isPressed){
-                if(!lowpitch)
                     rootNode.getChild("Box9").setMaterial(mat);
-                else
+                
                     rootNode.getChild("Box2").setMaterial(mat);
             }
             
@@ -218,9 +213,8 @@ public class Main extends SimpleApplication {
                     rootNode.getChild("Box3").setMaterial(apertado);
             }
             if(name.equals("Fa1") && !isPressed){
-                if(!lowpitch)
                     rootNode.getChild("Box10").setMaterial(mat);
-                else
+                
                     rootNode.getChild("Box3").setMaterial(mat);
             }
             
@@ -232,9 +226,8 @@ public class Main extends SimpleApplication {
                     rootNode.getChild("Box#3").setMaterial(apertado);
             }
             if(name.equals("Fa#1") && !isPressed){
-                if(!lowpitch)
                     rootNode.getChild("Box#10").setMaterial(mat2);
-                else
+                
                     rootNode.getChild("Box#3").setMaterial(mat2);
             }
             
@@ -246,9 +239,8 @@ public class Main extends SimpleApplication {
                     rootNode.getChild("Box4").setMaterial(apertado);
             }
             if(name.equals("Sol1") && !isPressed){
-                if(!lowpitch)
                     rootNode.getChild("Box11").setMaterial(mat);
-                else
+                
                     rootNode.getChild("Box4").setMaterial(mat);
             }
             
@@ -260,9 +252,8 @@ public class Main extends SimpleApplication {
                     rootNode.getChild("Box#4").setMaterial(apertado);
             }
             if(name.equals("Sol#1") && !isPressed){
-                if(!lowpitch)
                     rootNode.getChild("Box#11").setMaterial(mat2);
-                else
+                
                     rootNode.getChild("Box#4").setMaterial(mat2);
             }
             
@@ -274,9 +265,8 @@ public class Main extends SimpleApplication {
                     rootNode.getChild("Box5").setMaterial(apertado);
             }
             if(name.equals("La1") && !isPressed){
-                if(!lowpitch)
                     rootNode.getChild("Box12").setMaterial(mat);
-                else
+                
                     rootNode.getChild("Box5").setMaterial(mat);
             }
             
@@ -288,9 +278,8 @@ public class Main extends SimpleApplication {
                     rootNode.getChild("Box#5").setMaterial(apertado);
             }
             if(name.equals("La#1") && !isPressed){
-                if(!lowpitch)
                     rootNode.getChild("Box#12").setMaterial(mat2);
-                else
+                
                     rootNode.getChild("Box#5").setMaterial(mat2);
             }
             
@@ -302,9 +291,8 @@ public class Main extends SimpleApplication {
                     rootNode.getChild("Box6").setMaterial(apertado);
             }
             if(name.equals("Si1") && !isPressed){
-                if(!lowpitch)
                     rootNode.getChild("Box13").setMaterial(mat);
-                else
+                
                     rootNode.getChild("Box6").setMaterial(mat);
             }
             
@@ -316,9 +304,8 @@ public class Main extends SimpleApplication {
                     rootNode.getChild("Box21").setMaterial(apertado);
             }
             if(name.equals("Do2") && !isPressed){
-                if(!highpitch)
                     rootNode.getChild("Box14").setMaterial(mat);
-                else
+                
                     rootNode.getChild("Box21").setMaterial(mat);
             }
             if(name.equals("Do#2") && isPressed){
@@ -329,9 +316,8 @@ public class Main extends SimpleApplication {
                     rootNode.getChild("Box#21").setMaterial(apertado);
             }
             if(name.equals("Do#2") && !isPressed){
-                if(!highpitch)
                     rootNode.getChild("Box#14").setMaterial(mat2);
-                else
+                
                     rootNode.getChild("Box#21").setMaterial(mat2);
             }
             if(name.equals("Re2") && isPressed){
@@ -342,9 +328,8 @@ public class Main extends SimpleApplication {
                     rootNode.getChild("Box22").setMaterial(apertado);
             }
             if(name.equals("Re2") && !isPressed){
-                if(!highpitch)
                     rootNode.getChild("Box15").setMaterial(mat);
-                else
+                
                     rootNode.getChild("Box22").setMaterial(mat);
             }
             if(name.equals("Re#2") && isPressed){
@@ -355,9 +340,8 @@ public class Main extends SimpleApplication {
                     rootNode.getChild("Box#22").setMaterial(apertado);
             }
             if(name.equals("Re#2") && !isPressed){
-                if(!highpitch)
                     rootNode.getChild("Box#15").setMaterial(mat2);
-                else
+           
                     rootNode.getChild("Box#22").setMaterial(mat2);
             }
             
@@ -369,9 +353,8 @@ public class Main extends SimpleApplication {
                     rootNode.getChild("Box23").setMaterial(apertado);
             }
             if(name.equals("Mi2") && !isPressed){
-                if(!highpitch)
                     rootNode.getChild("Box16").setMaterial(mat);
-                else
+            
                     rootNode.getChild("Box23").setMaterial(mat);
             }
             
@@ -383,9 +366,9 @@ public class Main extends SimpleApplication {
                     rootNode.getChild("Box24").setMaterial(apertado);
             }
             if(name.equals("Fa2") && !isPressed){
-                if(!highpitch)
+              
                     rootNode.getChild("Box17").setMaterial(mat);
-                else
+              
                     rootNode.getChild("Box24").setMaterial(mat);
             }
             
@@ -397,9 +380,9 @@ public class Main extends SimpleApplication {
                     rootNode.getChild("Box#24").setMaterial(apertado);
             }
             if(name.equals("Fa#2") && !isPressed){
-                if(!highpitch)
+              
                     rootNode.getChild("Box#17").setMaterial(mat2);
-                else
+           
                     rootNode.getChild("Box#24").setMaterial(mat2);
             }
             
@@ -411,9 +394,9 @@ public class Main extends SimpleApplication {
                     rootNode.getChild("Box25").setMaterial(apertado);
             }
             if(name.equals("Sol2") && !isPressed){
-                if(!highpitch)
+              
                     rootNode.getChild("Box18").setMaterial(mat);
-                else
+               
                     rootNode.getChild("Box25").setMaterial(mat);
             }
             
@@ -425,9 +408,9 @@ public class Main extends SimpleApplication {
                     rootNode.getChild("Box#25").setMaterial(apertado);
             }
             if(name.equals("Sol#2") && !isPressed){
-                if(!highpitch)
+                
                     rootNode.getChild("Box#18").setMaterial(mat2);
-                else
+                
                     rootNode.getChild("Box#25").setMaterial(mat2);
             }
             
@@ -439,9 +422,9 @@ public class Main extends SimpleApplication {
                     rootNode.getChild("Box26").setMaterial(apertado);
             }
             if(name.equals("La2") && !isPressed){
-                if(!highpitch)
+                
                     rootNode.getChild("Box19").setMaterial(mat);
-                else
+              
                     rootNode.getChild("Box26").setMaterial(mat);
             }
             
@@ -453,9 +436,9 @@ public class Main extends SimpleApplication {
                     rootNode.getChild("Box#26").setMaterial(apertado);
             }
             if(name.equals("La#2") && !isPressed){
-                if(!highpitch)
+                
                     rootNode.getChild("Box#19").setMaterial(mat2);
-                else
+                
                     rootNode.getChild("Box#26").setMaterial(mat2);
             }
             
@@ -467,9 +450,9 @@ public class Main extends SimpleApplication {
                     rootNode.getChild("Box27").setMaterial(apertado);
             }
             if(name.equals("Si2") && !isPressed){
-                if(!highpitch)
+                
                     rootNode.getChild("Box20").setMaterial(mat);
-                else
+              
                     rootNode.getChild("Box27").setMaterial(mat);
             }
         }
